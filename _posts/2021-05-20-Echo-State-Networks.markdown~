@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Echo State Networks"
+date:   2021-05-20 22:07:29 +0200
+categories: jekyll update
+---
+
+The first machine learning algorithm that I encountered while doing my master thesis, was the echo state network (ESN). I am still not sure, whether this specific algorithm was a good introduction to the whole field of ML and neural networks. It is not your typical neural network about which you have already seen a YouTube video about. Nevertheless it was certainly an interesting topic. Especially, when combining it with an application in fluid mechanics.
+
+### The Echo State Network Algorithm
+The echo state network See [Jaeger2001]
+
+[Jaeger2001]: http://publica.fraunhofer.de/documents/B-73135.html
