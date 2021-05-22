@@ -18,7 +18,7 @@ RNNs were proposed way before Jaeger's echo state approach[[1]]. In conventional
 This is what makes the ESN a simple and handy algorithm, as the training is only a linear fit to your trainin data. The fact that we randomly create two weight matrices and subsequently use them for further data processin, might seem strange. Why should two random untrained matrices give any good results? They probably wouldn't. That is why, one needs to take extra care of the algebraic properties of these weights. For the input weights this usually boils down to a global scaling factor that can also be understood as scaling your input data. For the hidden weights on the other hand, one should scale the biggest absolute eigenvalue, denoted as its spectral radius. Jaeger further proposed to set many hidden weights to zero, leaving the matrix to be sparse. These factors together with the number of hidden neurons pose a set of hyperparameters, i.e. parameters that are not learned and have to be tuned beforehand. The bad news here is that these hyperparameters are very sensitive to the data at hand. This usually leads to extensive grid searches.
 
 ### ESN Algorithm
-to come... ($W^{\rm in}$, $W^{\rm r}$, $W^{\rm out}$)
+to come... ($$W^{\rm in}$$, $$W^{\rm r}$$, $$W^{\rm out}$$)
 
 
 
