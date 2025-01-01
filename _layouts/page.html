@@ -32,11 +32,18 @@ layout: base
     <!-- MathJax Configuration for LaTeX Delimiters -->
     <script type="text/x-mathjax-config">
       MathJax = {
-      tex: {
+        tex: {
           inlineMath: [['$', '$'], ['\\(', '\\)']],
           displayMath: [['$$', '$$'], ['\\[', '\\]']],
-          tags: 'all'
-      }
+          tags: 'ams',  // Use 'ams' to number only the equations with \tag{} or \[...\] style
+          tagSide: "right", // Position equation numbers on the right
+          tagIndent: "0.8em", // Indentation for numbers
+          processEscapes: true, // Allow escaping LaTeX commands
+        },
+        options: {
+          skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"],
+          processHtmlClass: "tex2jax_process" // Class for elements to be processed by MathJax
+        }
       };
     </script>
 
