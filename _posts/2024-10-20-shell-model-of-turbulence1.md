@@ -3,7 +3,7 @@ layout: post
 title: "Deriving a shell model of turbulence  (Part 1, Updated)"
 permalink: /_posts/2024-10-20-shell-model-of-turbulence1 -
 author: Florian Heyder
-readtime: 6min
+readtime: 15min
 tags: [turbulence, fluid dynamics, fluid mechanics, physics]
 thumbnail-img: /assets/img/2024-10-20-shell-model-of-turbulence1/thumbnail.jpg
 cover-img: /assets/img/2024-10-20-shell-model-of-turbulence1/cover.jpg
