@@ -45,7 +45,7 @@ navbar-links:
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "florian.heyder@gmail.com"
+  email: "info@florian-heyder.de"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
   linkedin: florian-heyder
   github: flohey
@@ -117,7 +117,7 @@ edit_page_button: false
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-keywords: "Fluid mechanics process engineer, Battery and converting sector,Solid-state physics,Nonlinear dynamics,Fluid dynamics,Atmospheric dynamics,Weather dynamics,Machine learning algorithms,Teaching and didactics,Physics education,Physics research,Process engineering in batteries,Computational fluid dynamics (CFD),Advanced physics concepts,Battery technology process engineering,Fluid mechanics in energy systems,Physics and machine learning,Atmospheric fluid mechanics,Machine learning in fluid dynamics, Engineering blog on fluid mechanics"
+keywords: "Fluid mechanics process engineer, Battery and converting sector,Solid-state physics,Nonlinear dynamics,Fluid dynamics, Atmospheric dynamics, Weather dynamics,Machine learning algorithms,Teaching and didactics,Physics education,Physics research,Process engineering in batteries,Computational fluid dynamics (CFD),Advanced physics concepts,Battery technology process engineering,Fluid mechanics in energy systems,Physics and machine learning,Atmospheric fluid mechanics,Machine learning in fluid dynamics, Engineering blog on fluid mechanics, multiphysics, Lean, Management, Six Sigma"
 
 ######################################
 # --- Colours / background image --- #
