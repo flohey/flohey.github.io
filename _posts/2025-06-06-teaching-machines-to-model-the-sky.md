@@ -132,10 +132,8 @@ Nevertheless, I believe that data-driven models should be structured in a way th
 ### References
 [1] 4th Assessment Report of the IPCC. [https://www.ipcc.ch/report/ar4/wg1/](https://www.ipcc.ch/report/ar4/wg1/)<br>
 [2] 5th Assessment Report of the IPCC. [https://www.ipcc.ch/report/ar5/wg1/](https://www.ipcc.ch/report/ar5/wg1/)<br>
-[3] Heyder, Mellado & Schumacher (2024): Generative Convective Parametrization of a Dry Atmospheric Boundary Layer. <br>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-DOI: [https://doi.org/10.1029/2023MS004012](https://doi.org/10.1029/2023MS004012).<br>
-[4] Code and Data Repository on Zenodo.
-DOI: [https://doi.org/10.5281/zenodo.10795940](https://doi.org/10.5281/zenodo.10795940).<br>
+[3] Heyder, Mellado & Schumacher (2024). DOI: [https://doi.org/10.1029/2023MS004012](https://doi.org/10.1029/2023MS004012).<br>
+[4] Code and Data Repository on Zenodo. DOI: [https://doi.org/10.5281/zenodo.10795940](https://doi.org/10.5281/zenodo.10795940).<br>
 [5] Direct Numerical Simulations computed with _tlab_. See this [GitHub Repository](https://github.com/jpmellado/tlab).<br>
 
 ### Appendix:  
