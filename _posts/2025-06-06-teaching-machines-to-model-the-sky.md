@@ -10,7 +10,7 @@ cover-img: /assets/img/2025-06-06-teaching-machines-to-model-the-sky/cover.png
 ---
 
 
-### Introduction
+## Introduction
 Even as global climate models reach resolutions of a few kilometers (see figure 1), they still struggle to represent turbulence, i.e. chaotic fluid motion, in the lowest part of the atmosphere — the boundary layer. That's where many of the key interactions between Earth’s surface and the atmosphere happen, and it’s where traditional models fall short due to their inability to resolve small-scale eddies and sharp gradients directly. These models use simplified formulas, called parameterizations, to estimate how turbulence moves heat, moisture, and air near the ground. But these shortcuts often miss important details like the mix of forests, cities, and open land, or how turbulence changes between day and night. As a result, the models can make consistent mistakes in predicting temperature, humidity, and wind near the surface.
 
 <div style="text-align: center;">
@@ -45,7 +45,7 @@ b) The number of required grid points — and thus memory consumption — of num
 Given these challenges, we asked:
 **Can machine learning — specifically a Generative Adversarial Network (GAN) — learn to model turbulence in a dry atmospheric boundary layer more accurately and efficiently?**
 
-### Why the Boundary Layer Matters
+## Why the Boundary Layer Matters
 
 The atmospheric boundary layer (see figure 3 and 4) is the layer of air directly influenced by Earth's surface. During the day, the Sun heats the Earth’s surface, which in turn warms the air just above it. This creates rising plumes of warm air — a process called natural convection — that results in a well-mixed layer of air. This layer, referred to as convective boundary layer (CBL) grows upward into the more stable air above, known as the free atmosphere. Over the course of the day, this boundary layer can grow to a height of one to several kilometers, depending on surface heating and atmospheric conditions. The atmospheric boundary layer matters because it's the part of the atmosphere we live in — where we experience weather, feel the wind, and where pollution, heat, and moisture from the surface interact with the air above us. Therefore, it is crucial to correctly model this part of our atmosphere in a global climate model.
 
@@ -70,7 +70,7 @@ Anim. 1 - <strong>Vertical view of the simulated CBL.</strong>:
 </em>
 
 
-### A Physics-Aware Machine Learning Method for Modeling the CBL
+## A Physics-Aware Machine Learning Method for Modeling the CBL
 As mentioned above, traditional approaches like the EDMF scheme are computationally cheap but often too simplified to capture the complex structure and variability of real turbulent flows. Our goal was to explore whether machine learning (ML) can help improve the way we model turbulence in the atmospheric boundary layer. We want to test whether a trained machine learning model — once trained on high-fidelity simulation data — can generate realistic snapshots of the ABL that reproduce key flow patterns and statistical properties, potentially offering a more accurate yet still efficient alternative to EDMF.
 
 Instead of relying solely on physics-based closures, we trained an ML model, a **Generative Adversarial Network (GAN)** (see figure 4), on high-resolution simulation data to reproduce realistic slices of turbulence — specifically vertical velocity and temperature fluctuations.
@@ -96,7 +96,7 @@ Fig. 5 - <strong>Physics-Aware Training Data</strong>:
 </em>
 
 
-### What Did the GAN Learn?
+## What Did the GAN Learn?
 
 We find that the GAN accurately reproduced both the spatial patterns (see figure 6d-f)) and complex statistical features of turbulence (see figure 6g-i)). In particular, at lower, mid and upper levels of the boundary layer, it successfully captured features like penetrating thermals as well as up- and downdrafts.
 
@@ -113,7 +113,7 @@ Panels (a–c) show results from a high-accuracy simulation that we used as the 
 </em>
 
 
-### Conclusion
+## Conclusion
 Here are the key takeaways from our study. We used a machine learning model that learns from data produced by high-resolution simulations that resolve every detail of turbulent flow. We further informed the GAN with physics by using scaling laws from atmospheric fluid mechanics. This allowed the model to generalize across different stages of boundary layer growth and even outperform traditional closures in both accuracy and richness of output.
 
 In large-scale weather and climate models, we rarely have the resolution to explicitly simulate boundary-layer turbulence. A trained ML model could fill that gap — not just with mean values, but with realistic synthetic fields.
@@ -129,16 +129,16 @@ Nevertheless, I believe that data-driven models should be structured in a way th
 
 ---
 
-### References
+## References
 [1] 4th Assessment Report of the IPCC. [https://www.ipcc.ch/report/ar4/wg1/](https://www.ipcc.ch/report/ar4/wg1/)<br>
 [2] 5th Assessment Report of the IPCC. [https://www.ipcc.ch/report/ar5/wg1/](https://www.ipcc.ch/report/ar5/wg1/)<br>
 [3] Heyder, Mellado & Schumacher (2024). DOI: [https://doi.org/10.1029/2023MS004012](https://doi.org/10.1029/2023MS004012).<br>
 [4] Code and Data Repository on Zenodo. DOI: [https://doi.org/10.5281/zenodo.10795940](https://doi.org/10.5281/zenodo.10795940).<br>
 [5] Direct Numerical Simulations computed with _tlab_. See this [GitHub Repository](https://github.com/jpmellado/tlab).<br>
 
-### Appendix:  
+## Appendix:  
 
-#### A Peek Under the Hood
+### A Peek Under the Hood
 
 - **Simulation:** 3D direct numerical simulation (DNS) with 1.2 billion grid points per time step
 - **ML-Model Architecture:** U-Net GAN with Wasserstein loss
